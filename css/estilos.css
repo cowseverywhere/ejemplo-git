@@ -6,6 +6,9 @@
 
 body {
     font-family: "VT323";
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 130px auto; /*tamaño de las filas, 130px es el tamaño del header*/
 }
 
 header{
@@ -21,6 +24,10 @@ h1{
     font-size: 3em;
 }
 
+h1 a {
+    color: blue;
+}
+
 
 nav ul{
     list-style: none;
@@ -33,10 +40,21 @@ nav a{
     font-size: 2em;
 }
 
-.abrir,
+.abrir, 
 .cerrar{
     display: none;
 } 
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2{
+    font-size: 4em;
+}
 
 @media screen and (max-width:800px){
     nav{
@@ -96,4 +114,9 @@ nav a{
         height: 3px;
         margin-bottom: 5px;
     }
+
+    h2{
+        font-size: 2em;
+    }
+
 }
